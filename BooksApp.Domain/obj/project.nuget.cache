@@ -1,11 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "4O0aFG06mCjL9hf/32ouY9yfsd8AfErOdNrsG1ean/IbnAX9lp5QQLPPanBDj/kNE02Z0C74+MNdbGhR2facSw==",
-  "success": true,
+  "dgSpecHash": "lZlcBokD/rjxKGkQ//mFqcowfD+xYprSeBBzCb5oDCKx+qmWWywUjnIH+YAT2KnuljYCEoc4MIVrPNNsxtSeDA==",
+  "success": false,
   "projectFilePath": "C:\\Users\\josec\\source\\repos\\BookApp\\BooksApp.Domain\\BooksApp.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josec\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\josec\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto BooksApp.Data no es compatible con netstandard2.0 (.NETStandard,Version=v2.0). El proyecto BooksApp.Data admite: netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "BooksApp.Data",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "BooksApp.Data/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/BooksApp.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BooksApp.Data.dll": {}
+        }
       }
     }
   },
@@ -172,10 +182,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "BooksApp.Data/1.0.0": {
+      "type": "project",
+      "path": "../BooksApp.Data/BooksApp.Data.csproj",
+      "msbuildProject": "../BooksApp.Data/BooksApp.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "BooksApp.Data >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -205,7 +221,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\josec\\source\\repos\\BookApp\\BooksApp.Data\\BooksApp.Data.csproj": {
+              "projectPath": "C:\\Users\\josec\\source\\repos\\BookApp\\BooksApp.Data\\BooksApp.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -238,5 +258,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "El proyecto BooksApp.Data no es compatible con netstandard2.0 (.NETStandard,Version=v2.0). El proyecto BooksApp.Data admite: netstandard2.1 (.NETStandard,Version=v2.1)",
+      "libraryId": "BooksApp.Data",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
